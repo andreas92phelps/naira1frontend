@@ -12,7 +12,7 @@ function Login() {
     let form = new FormData(e.currentTarget)//this lets every new data from 'form e' e=be stored in variable 'form1'
     // alert(form1.get("first_name"))
     // alert(form1.get("last_name"))//these two lines of code are simply written in order to show you that the certain data has been stored in the form under the first and last name properties.
-    await axios.post("http://localhost:8000/login/", form)
+    await axios.post("https://iamimmortal8.pythonanywhere.com/login/", form)
       .then((res) => {
         localStorage.setItem("user", JSON.stringify(res.data))
         alert("Login successful")

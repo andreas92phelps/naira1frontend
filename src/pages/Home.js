@@ -16,7 +16,7 @@ function Home() {
 
   useEffect(() => {//use effect is added here so that the code will not be repeatedly run before the page has finished loading. With this, it runs only once.
 
-  axios.get(`http://localhost:8000/getarticles/`)//this code states that as the page loads send a get request
+  axios.get(`https://iamimmortal8.pythonanywhere.com//getarticles/`)//this code states that as the page loads send a get request
   .then((res) => setData(res.data))
   .catch((err) => console.log(err)) //this code will 
 
